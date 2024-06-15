@@ -1,0 +1,41 @@
+﻿<Window x:Class="PROG6221_ST10291856_Poe.IngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG6221_ST10291856_Poe"
+        mc:Ignorable="d"
+        Title="IngredientWindow" Height="450" Width="800">
+    <Grid>
+     
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/SpiceBackground.jpg"/>
+        </Grid.Background>
+
+ <StackPanel Height="434" VerticalAlignment="Center" HorizontalAlignment="Right" Width="684" Margin="0,0,116,0" Background="Black" Opacity="0.7">
+ 
+            
+            <Label Content="Enter ingredient name" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="IngredientNameTextBox" Margin="0,2,0,12" Background="#FFC33F0B"/>
+
+            <Label Content="Enter quantity" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="QuantityTextBox" Margin="0,2,0,12" Background="#FFC33F0B"/>
+            
+            <Label Content="Enter unit (e.g., grams, cups)" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="UnitTextBox" FontWeight="Bold" Foreground="White" Margin="0,0,0,12" Background="#FFC33F0B"/>
+            
+            <Label Content="Enter calories per unit" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="CaloriesTextBox" Margin="0,0,0,12" Background="#FFC33F0B" />
+            
+            <Label Content="Enter food group" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="FoodGroupTextBox" Margin="0,0,0,12" Background="#FFC33F0B"/>
+            
+            <Button Name="SaveIngredientButton" Content="Save Ingredient" Click="SaveIngredientButton_Click" Margin="60,20,60,20" Foreground="Black" Background="White"/>
+            <Button Name="CloseButton" Content="Close" Click="CloseButton_Click" Margin="60,10,60,10"/>
+        </StackPanel>
+
+        <Rectangle HorizontalAlignment="Left" Width="116" Margin="684,0,0,0" Height="434" VerticalAlignment="Bottom" Fill="Black" Opacity="0.7"/>
+        <Button Content="Home" HorizontalAlignment="Right" Height="33" VerticalAlignment="Top" Width="116" 
+                BorderBrush="#FFC33F0B" Background="Black" Foreground="#FFC33F0B" Click="Homebtn" FontFamily="Copperplate Gothic Bold"/>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Final_PROG6221_Poe_ST10291856</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SpiceBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SpiceBackground.jpg" />
+  </ItemGroup>
+
+</Project>
